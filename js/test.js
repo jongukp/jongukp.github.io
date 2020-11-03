@@ -18,4 +18,5 @@ function startTime() {
         today.getHours() + ":" +
         today.getMinutes() + ":" +
         today.getSeconds();
+        setTimeout(startTime, 500);
 }

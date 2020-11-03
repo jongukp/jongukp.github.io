@@ -1,6 +1,7 @@
 let count = 0;
 const button = document.getElementById("increment");
 const button2 = document.getElementById("decrement");
+const button3 = document.getElementById("reset");
 const textHolder = document.getElementById("count");
 textHolder.innerHTML = count;
 
@@ -10,6 +11,10 @@ button.addEventListener("click", function() {
 
 button2.addEventListener("click", function() {
     textHolder.innerHTML = --count;
+});
+
+button3.addEventListener("click", function() {
+    textHolder.innerHTML = 0;
 });
 
 function startTime() {

@@ -14,7 +14,8 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    textHolder.innerHTML = 0;
+    count = 0;
+    textHolder.innerHTML = count;
 });
 
 function startTime() {

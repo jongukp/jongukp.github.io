@@ -14,7 +14,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    count = 0;
+    count === 0;
     textHolder.innerHTML = count;
 });
 

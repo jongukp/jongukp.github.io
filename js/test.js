@@ -11,3 +11,11 @@ button.addEventListener("click", function() {
 button2.addEventListener("click", function() {
     textHolder.innerHTML = --count;
 });
+
+function startTime() {
+    const today = new Date();
+    document.getElementById('txt').innerHTML =
+        today.getHours() + ":" +
+        today.getMinutes() + ":" +
+        today.getSeconds();
+}

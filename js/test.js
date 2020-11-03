@@ -28,8 +28,9 @@ function startTime() {
 }
 
 function prettyTime(input) {
-    if (input < 10)
+    if (input < 10) {
         return "0" + input
+    }
 }
 
 function addNumber() {

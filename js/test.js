@@ -13,7 +13,7 @@ button2.addEventListener("click", function() {
 });
 
 function startTime() {
-    const today = new Date();
+    let today = new Date();
     document.getElementById('txt').innerHTML =
         today.getHours() + ":" +
         today.getMinutes() + ":" +

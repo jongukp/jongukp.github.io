@@ -21,10 +21,15 @@ button3.addEventListener("click", function() {
 function startTime() {
     let today = new Date();
     document.getElementById('txt').innerHTML =
-        today.getHours() + ":" +
-        today.getMinutes() + ":" +
-        today.getSeconds();
+        prettyTime(today.getHours()) + ":" +
+        prettyTime(today.getMinutes()) + ":" +
+        prettyTime(today.getSeconds());
         setTimeout(startTime, 500);
+}
+
+function prettyTime(input) {
+    if (input < 10)
+        return "0" + input
 }
 
 function addNumber() {
